@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,300i&display=swap");
+@import "normalize.css";
+
+/* GENERAL */
+
+body {
+  font-family: "Roboto";
+  font-weight: lighter;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #001f3f;
+  color: #001f3f;
+  font-size: 0.9em;
+  background: linear-gradient(
+      to left top,
+      #ff9a9e 0% /*bottom-right color*/,
+      /* #0074D9 50% middle color, */ #fad0c4 100% /*top-left color*/
+    ),
+    linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1))
+      /*"faked" black background make sure to add last or it will appear before the transparent/colored layer*/;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Montserrat";
+  font-weight: bold;
+}
+
+h1 {
+  margin-bottom: 0.5em;
+  font-size: 2.4em;
+}
+
+h3 {
+  font-size: 0.9em;
+  /* margin-top: 0; */
+  padding: 0.5em 0.7em;
+  border-radius: 0.4em;
+  background-color: none;
+  transition: 0.3s;
+  margin-bottom: 3em;
+}
+
+h3:hover {
+  background-color: #85144b;
+  color: white;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+/* HEADER AND FOOTER */
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 1.5em;
+  margin-bottom: 0.5em;
+  width: 100%;
+  /* border-bottom: solid 1px #85144b; */
+}
+
+header a, footer a{
+  position:relative;
+  text-decoration:none;
+  display:inline-block;
+}
+header a:after, footer a:after{
+  display:block;
+  content: '';
+  border-bottom: solid 3px #85144b;  
+  transform: scaleX(0);  
+  transition: transform 250ms ease-in-out;
+  transform-origin:100% 50%
+}
+header a:hover:after , footer a:hover:after{ 
+  transform: scaleX(1);
+  transform-origin:0 50%;
+}
+
+p {
+  margin: 0;
+}
+
+p em {
+  display: block;
+  margin-bottom: 2em;
+  font-size: 0.9em;
+}
+
+/* BODY */
+
+div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+div a {
+  display: block;
+  margin-bottom: 0.1em;
+  padding: 0.3em 0.5em;
+  border-radius: 0.2em;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  max-width: 75ch;
+}
+
+a {
+  color: #85144b;
+  background-color: none;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+div a:hover {
+  background-color: #85144b;
+  color: white;
+  transition: 0.3s;
+}
+

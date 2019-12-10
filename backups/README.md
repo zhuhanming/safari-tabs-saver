@@ -1,3 +1,3 @@
-# safari-tabs-saver backups folder
+# Safari Tabs Saver Backups
 
 Your backups will appear here after running the script.

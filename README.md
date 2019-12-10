@@ -45,15 +45,15 @@ You can open saved tabs one by one by clicking the saved tab title, or open the 
 
 ## Built With
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+* [Python](https://www.python.org) - Language used
+* [safari-open-pages.py](https://gist.github.com/aleks-mariusz/cc27b21f2c5b91fbd285) - Fetches open tabs in Safari
+* [Normalize.css](https://necolas.github.io/normalize.css/) - Normalises view in exported HTML file
 
 ## Contributing
 
 1. Fork it (<https://github.com/zhuhanming/safari-tabs-saver/fork>)
 2. Create your feature branch (`git checkout -b feature/fooBar`)
-3. Commit your changes (`git commit -am 'Add some fooBar'`)
+3. Commit your changes (`git commit -m 'Add some fooBar'`)
 4. Push to the branch (`git push origin feature/fooBar`)
 5. Create a new Pull Request
 
